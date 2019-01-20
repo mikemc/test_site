@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://mikemc.netlify.com/"
 languageCode = "en"
 title = "Mike's test blog"
 theme = "kiss"
