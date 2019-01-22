@@ -1,0 +1,46 @@
+---
+title: Test Rmd post
+author: Mike
+date: '2019-01-20'
+slug: test-rmd-post
+categories: ["R"]
+tags:
+  - R Markdown
+  - Latex
+output:
+  blogdown::html_page:
+    toc: true
+    highlight: tango
+---
+
+
+## Some math
+
+I can write math, such as $e^{-i\pi} = -1$ and
+$$
+\mathbf O \sim \mathbf A \cdot \mathbf B.
+$$
+
+## Some R code
+
+
+```{r}
+library(tidyverse)
+
+tb <- mtcars %>% as_tibble
+glimpse(tb)
+```
+
+
+```{r}
+tb %>%
+    group_by(cyl) %>%
+    summarize(hp = mean(hp)) %>%
+    knitr::kable()
+```
+
+```{r}
+print(2+3)
+```
+
+

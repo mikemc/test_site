@@ -2,7 +2,7 @@ baseurl = "https://mikemc.netlify.com/"
 languageCode = "en"
 title = "Mike's test blog"
 theme = "kiss"
-copyright = "&copy; Michael McLaren 2017"
+copyright = "&copy; Michael McLaren 2019"
 googleAnalytics = ""
 # Number of posts per page
 Paginate = 5
@@ -10,8 +10,13 @@ enableRobotsTXT = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params.sections_left]
+"/about" = "About"
+"/tags" = "Tags"
+"/categories" = "Categories"
 
 [params.sections_right]
+# "https://callahanlab.cvm.ncsu.edu/" = "Callahan Lab"
+# "https://scholar.google.com/citations?user=rWErWm4AAAAJ&hl=en" = "Publications"
 
 [params.features]
 
@@ -19,7 +24,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 customCSS = ["css/custom.css"]
 
 [params.rss]
-
 includeContent = true # Includes whole content in rss
 authorName = "Michael McLaren" # Site author's full name
 authorEmail = "m.mclaren42@gmail.com"
@@ -42,7 +46,7 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 [params.social]
 
 twitter = "mikemc423"
-github = "mmclaren42"
+github = "mikemc"
 email = "m.mclaren42@gmail.com"
 linkedin = ""
 gitlab = ""
@@ -54,14 +58,15 @@ facebook = ""
 platforms = ["twitter","github","email"]
 
 [params.matomoAnalytics]
-siteID = 1
-rootURL = "//matomo.example.com/"
+# siteID = 1
+# rootURL = "//matomo.example.com/"
 
 [params.fathomAnalytics]
-rootURL = "//fathom.example.com/"
+# rootURL = "//fathom.example.com/"
 
 [taxonomies]
-tag ="tags"
+tag = "tags"
+category = "categories"
 
 [blackfriday]
 hrefTargetBlank = true
